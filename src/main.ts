@@ -1,14 +1,20 @@
-import '@/assets/css/index.scss'
+import { createApp } from "vue";
+import App from "./App.vue";
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+// 引入清除默认样式文件
+import "@/style/reset.scss";
+// 引入Element Plus
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
+// 国际化
+import zhCn from "element-plus/dist/locale/zh-cn.mjs";
+// 引入路由
+import router from "@/router";
 
-import App from './App.vue'
-import router from './router'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+const app = createApp(App);
+app.use(router);
+app.use(ElementPlus);
+app.use(ElementPlus, {
+  locale: zhCn,
+});
+app.mount("#app");
