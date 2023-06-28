@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
+>>>>>>> 59a142cbc9ccb5507d66fb88d8826d9299a65ce9
   "compilerOptions": {
     "composite": true,
     "skipLibCheck": true,

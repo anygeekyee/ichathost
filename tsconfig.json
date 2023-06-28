@@ -37,6 +37,28 @@
   "references": [
     {
       "path": "./tsconfig.node.json"
+<<<<<<< HEAD
     }
   ]
 }
+=======
+    },
+    
+  ],
+  "compilerOptions": {
+    "module": "es2020",
+    "target": "es2020",
+    "esModuleInterop": true,
+    "types": [
+      "node",
+      "vue",
+      "vue-router"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
+>>>>>>> 59a142cbc9ccb5507d66fb88d8826d9299a65ce9
