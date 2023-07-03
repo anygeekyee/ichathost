@@ -11,5 +11,5 @@ module.exports = {
       name: 'local',
       api: baseUrlList.local,
     },
-  }
+  },
 }

@@ -1,20 +1,20 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
 
 // 引入清除默认样式文件
-import "@/style/reset.scss";
+import '@/style/reset.scss'
 // 引入Element Plus
-import ElementPlus from "element-plus";
-import "element-plus/dist/index.css";
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 // 国际化
-import zhCn from "element-plus/dist/locale/zh-cn.mjs";
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 // 引入路由
-import router from "@/router";
+import router from '@/router'
 
-const app = createApp(App);
-app.use(router);
-app.use(ElementPlus);
+const app = createApp(App)
+app.use(router)
+app.use(ElementPlus)
 app.use(ElementPlus, {
   locale: zhCn,
-});
-app.mount("#app");
+})
+app.mount('#app')
