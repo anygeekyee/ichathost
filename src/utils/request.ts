@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 import { ElMessage } from 'element-plus'
 
 const request = axios.create({
@@ -18,30 +17,32 @@ request.interceptors.response.use(
     //响应拦截器成功的回调,一般会进行简化数据
     return response.data
   },
+
   (error) => {
-    //处理http网络错误
+    let message = ''
+    const type = 'error'
     const status = error.response.status
+
     switch (status) {
       case 404:
-        //错误提示信息
-        ElMessage({
-          type: 'error',
-          message: '请求失败路径出现问题',
-        })
+        message = '请求失败路径出现问题'
         break
-      case 500 | 501 | 502 | 503 | 504 | 505:
-        ElMessage({
-          type: 'error',
-          message: '服务器挂了',
-        })
+      case 500:
+      case 501:
+      case 502:
+      case 503:
+      case 504:
+      case 505:
+        message = '服务器挂了'
         break
       case 401:
-        ElMessage({
-          type: 'error',
-          message: '参数有误',
-        })
+        message = '参数有误'
+        break
+      default:
+        message = '未知错误'
         break
     }
+    ElMessage({ type, message })
     return Promise.reject(new Error(error.message))
   },
 )
