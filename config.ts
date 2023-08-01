@@ -1,6 +1,6 @@
 const baseUrlList = {
   // 本地研发环境
-  local: 'http://10.2.176.14:30780/api',
+  local: 'http://10.2.128.74:3000', // lidian
 }
 module.exports = {
   port: '9001',

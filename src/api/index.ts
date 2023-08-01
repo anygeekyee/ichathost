@@ -1,8 +1,8 @@
 import request from '@/utils/request'
 
-export function getAccountCurrentInfo(data) {
+export function getBot(data: any) {
   return request({
-    url: `/account/current-info`,
+    url: `/bot`,
     method: 'get',
     data,
   })
