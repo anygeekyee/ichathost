@@ -1,34 +1,8 @@
-# ichathost
+# 小岛管家
 
-小岛管家项目前端
+小岛管家前端项目地址: https://github.com/anygeekyee/ichathost
+小岛管家后端项目地址: https://github.com/anygeekyee/ichatapi
 
+## 技术栈
 
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-***
-musa test pull request
+Vue3 + TypeScript + Vue-Router + Pinia + Axios + Element-Plus + Echarts
