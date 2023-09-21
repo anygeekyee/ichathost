@@ -1,8 +1,8 @@
 <template>
   <div class="app-header">
     <div class="left">
-      <el-image src="@/assets/images/logo.png"></el-image>
-      <span>小岛管家</span>
+      <el-image :src="url" style="height: 45px; width: 45px"></el-image>
+      <div style="display: inline-block">小岛管家</div>
     </div>
     <div class="right">
       <el-icon>
@@ -83,7 +83,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import url from '@/assets/images/logo.png'
+</script>
 
 <style scoped lang="scss">
 .app-header {
@@ -96,10 +98,13 @@
   border-bottom: 1px solid #ccc;
   // background-color: red;
   .left {
-    font-size: 30px;
-    margin-left: 10px;
-    span {
-      margin-left: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    div {
+      margin-left: 10px;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: middle;
     }
   }
   .right {

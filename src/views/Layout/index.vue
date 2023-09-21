@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
-    <Header />
-    <el-container>
+    <Header class="header" />
+    <el-container class="container">
       <el-aside width="200px">
         <Aside />
       </el-aside>
@@ -17,11 +17,17 @@ import Main from './Main/index.vue'
 </script>
 
 <style lang="scss" scoped>
-.el-header {
+.header {
   position: relative;
   width: 100%;
+  padding: 5px;
+  margin: 10px;
 }
 .common-layout {
   height: 100%;
+}
+
+.container {
+  padding-left: 5px;
 }
 </style>

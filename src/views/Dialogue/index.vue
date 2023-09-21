@@ -1,7 +1,7 @@
 <template>
-  <div>用户设置</div>
+  <div>对话</div>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts" setup></script>
 
 <style lang="scss" scoped></style>

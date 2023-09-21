@@ -6,3 +6,15 @@
 ## 技术栈
 
 Vue3 + TypeScript + Vue-Router + Pinia + Axios + Element-Plus + Echarts
+
+## 安装依赖
+
+pnpm install
+
+## debug 启动
+
+pnpm run dev
+
+## 编译
+
+pnpm run build
