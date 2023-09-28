@@ -1,8 +1,11 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 
+// const baseURL = process.env.BASE_URL
+const baseURL = import.meta.env.VITE_BASE_URL
+
 const request = axios.create({
-  baseURL: '',
+  baseURL: baseURL,
   timeout: 5000,
 })
 
@@ -19,6 +22,7 @@ request.interceptors.response.use(
   },
 
   (error) => {
+    console.log('error')
     let message = ''
     const type = 'error'
     const status = error.response.status
